@@ -12,7 +12,7 @@ function App() {
 
   const fetchTodos = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/todos");
+      const res = await axios.get("https://todo-fullstack-seven.vercel.app/todos");
       setTodos(res.data);
     } catch(error) {
         console.error('Error fetching data:', error);

@@ -16,7 +16,7 @@ function CreateTodo() {
 
     const handlePostRequest = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/todo", 
+            const res = await axios.post("https://todo-fullstack-seven.vercel.app/todo", 
             JSON.stringify({
                 title : title,
                 description : description
