@@ -6,7 +6,7 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(express.json());
 app.use(cors());
 
@@ -100,5 +100,7 @@ app.delete('/delete/:id', async (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Listening to poart ${port}`);
+    console.log(`Server started on port ${port}`);
 })
+
+module.exports = app;
